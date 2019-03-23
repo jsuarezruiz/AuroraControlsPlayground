@@ -1,6 +1,6 @@
 # Aurora Controls Playground
 
-Xamarin.Forms sample to show the main Aurora Controls features.
+Xamarin.Forms sample to show the main [Aurora Controls](https://auroracontrols.app) features.
 
 ## Copyright and license
 
