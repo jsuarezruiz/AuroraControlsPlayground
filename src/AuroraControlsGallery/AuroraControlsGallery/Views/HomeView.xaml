@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:aurora="clr-namespace:Aurora.Controls;assembly=Aurora"
+             xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             x:Class="AuroraControlsGallery.Views.HomeView"
+             Title="Aurora Controls">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+            <Style x:Key="LogoStyle" TargetType="forms:CachedImage">
+                <Setter Property="WidthRequest" Value="120" />
+                <Setter Property="VerticalOptions" Value="Center" />
+                <Setter Property="Margin" Value="24" />
+            </Style>
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="300" />
+                <RowDefinition  Height="*" />
+            </Grid.RowDefinitions>
+            <Grid
+                Grid.Row="0"
+                BackgroundColor="{StaticResource AccentColor}">
+                <forms:CachedImage
+                    Aspect="AspectFill"
+                    Source="aurorabackground"/>
+                <forms:CachedImage 
+                    Aspect="AspectFit"
+                    Source="auroralogo"
+                    Style="{StaticResource LogoStyle}"/>
+            </Grid>
+            <Grid
+                Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <aurora:Tile
+                    Grid.Column="0"
+                    Grid.Row="0"  
+                    Command="{Binding ControlsCommand}"
+                    CornerRadius="12" 
+                    ShadowLocation="0, 8"
+                    ShadowBlurRadius="4" 
+                    TapAnimationDuration="500"
+                    ContentPadding="8"
+                    OverlayColor="White"
+                    Text="Controls" 
+                    ButtonBackgroundColor="{StaticResource AccentColor}"
+                    Margin="12"/>
+                <aurora:Tile
+                    Grid.Column="1"
+                    Grid.Row="0"    
+                    Command="{Binding EffectsCommand}"
+                    CornerRadius="12" 
+                    ShadowLocation="0, 8"
+                    ShadowBlurRadius="4" 
+                    TapAnimationDuration="500"
+                    ContentPadding="8"
+                    OverlayColor="White" 
+                    Text="Effects" 
+                    ButtonBackgroundColor="{StaticResource AccentColor}"
+                    Margin="12"/>
+                <aurora:Tile
+                    Grid.Column="0"
+                    Grid.Row="1"    
+                    Command="{Binding GaugesCommand}"
+                    CornerRadius="12" 
+                    ShadowLocation="0, 8"
+                    ShadowBlurRadius="4" 
+                    TapAnimationDuration="500"
+                    ContentPadding="8"
+                    OverlayColor="White" 
+                    Text="Gauges" 
+                    ButtonBackgroundColor="{StaticResource AccentColor}"
+                    Margin="12"/>
+                <aurora:Tile
+                    Grid.Column="1"
+                    Grid.Row="1"    
+                    Command="{Binding LoadingCommand}"
+                    CornerRadius="12" 
+                    ShadowLocation="0, 8"
+                    ShadowBlurRadius="4" 
+                    TapAnimationDuration="500"
+                    ContentPadding="8"
+                    OverlayColor="White" 
+                    Text="Loading" 
+                    ButtonBackgroundColor="{StaticResource AccentColor}"
+                    Margin="12"/>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

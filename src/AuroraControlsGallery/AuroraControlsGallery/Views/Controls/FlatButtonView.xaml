@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:aurora="clr-namespace:Aurora.Controls;assembly=Aurora"
+             x:Class="AuroraControlsGallery.Views.Controls.FlatButtonView"
+             Title="FlatButton">
+    <ContentPage.Content>
+        <Grid>
+            <aurora:FlatButton 
+                Text="Flat Button" 
+                HeightRequest="44" 
+                InkColor="Orange" 
+                VerticalOptions="Center"
+                Margin="12, 0"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:aurora="http://xamarin.com/schemas/2014/forms/design"
+             x:Class="AuroraControlsGallery.Views.Controls.SliderView"
+             Title="Slider">
+    <ContentPage.Content>
+        <Grid>
+            <aurora:Slider
+                MinimumTrackColor="Yellow"
+                MaximumTrackColor="Red"
+                ThumbColor="Blue" 
+                Minimum="0"
+                Maximum="100"
+                Value="33"
+                VerticalOptions="Center"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

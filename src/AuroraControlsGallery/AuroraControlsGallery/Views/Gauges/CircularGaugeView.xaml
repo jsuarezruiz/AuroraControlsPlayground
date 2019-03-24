@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:aurora="clr-namespace:Aurora.Gauges;assembly=Aurora"
+             x:Class="AuroraControlsGallery.Views.Gauges.CircularGaugeView"
+             Title="Circular Gauge">
+    <ContentPage.Content>
+        <Grid>
+            <aurora:CircularGauge 
+                StartingDegree="-45" 
+                EndingDegree="90" 
+                ProgressColor="Lime" 
+                ProgressBackgroundColor="Olive"
+                ProgressThickness="30" 
+                EndCapType="Rounded"
+                Margin="24"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

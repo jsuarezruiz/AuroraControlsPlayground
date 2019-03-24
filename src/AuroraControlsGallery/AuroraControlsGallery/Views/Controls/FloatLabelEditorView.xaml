@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:aurora="clr-namespace:Aurora.Controls;assembly=Aurora"
+             x:Class="AuroraControlsGallery.Views.Controls.FloatLabelEditorView"
+             Title="FloatLabelEditor">
+    <ContentPage.Content>
+        <Grid>
+            <aurora:FloatLabelEditor
+                EditingViewHeight="200"
+                Placeholder="Editor" 
+                BorderSize="3" 
+                ActiveColor="Purple"
+                InactiveColor="Green" 
+                VerticalOptions="Center"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

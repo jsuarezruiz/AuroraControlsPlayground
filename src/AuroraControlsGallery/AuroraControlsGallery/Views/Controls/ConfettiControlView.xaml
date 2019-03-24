@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:aurora="clr-namespace:Aurora.Controls;assembly=Aurora"
+             x:Class="AuroraControlsGallery.Views.Controls.ConfettiControlView"
+             Title="Confetti">
+    <ContentPage.Content>
+        <Grid>
+            <aurora:ConfettiView 
+                x:Name="Confetti"
+                MaxParticles="100" 
+                Continuous="True"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

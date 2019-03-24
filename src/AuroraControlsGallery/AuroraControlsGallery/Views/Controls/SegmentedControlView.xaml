@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:aurora="clr-namespace:Aurora.Controls;assembly=Aurora"
+             x:Class="AuroraControlsGallery.Views.Controls.SegmentedControlView"
+             Title="SegmentedControl">
+    <ContentPage.Content>
+        <Grid>
+            <aurora:SegmentedControl 
+                SegmentControlStyle="Cupertino"
+                VerticalOptions="Center">
+                <aurora:SegmentedControl.Segments>
+                    <aurora:Segment Text="Test 1" ForegroundColor="Lime" />
+                    <aurora:Segment Text="Test 2"  />
+                    <aurora:Segment Text="Test 3" ForegroundColor="Fuchsia" />
+                </aurora:SegmentedControl.Segments>
+            </aurora:SegmentedControl>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

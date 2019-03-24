@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:aurora="clr-namespace:Aurora.Controls;assembly=Aurora"
+             x:Class="AuroraControlsGallery.Views.Controls.TileView"
+             Title="Tile">
+    <ContentPage.Content>
+        <Grid>
+            <aurora:Tile 
+                HeightRequest="200"
+                WidthRequest="150"
+                CornerRadius="2" 
+                ShadowLocation="0, 8" 
+                ShadowBlurRadius="4"
+                TapAnimationDuration="600" 
+                ContentPadding="8"
+                OverlayColor="White" 
+                Text="XAMARIN" 
+                ButtonBackgroundColor="Maroon"
+                VerticalOptions="Center"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
